@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Optimizing Inventory Routing: A Decision-Focused Learning Approach using Neural Networks - MD Shafikul Islam, Azmine Toushik Wasi">
+  <meta name="keywords" content="ARBEx">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+  <meta property="og:image" content="./static/images/1_formulation-page-001.jpg">
+  <meta property="og:image:type" content="image/jpg">
+
+
+
+  <title>Optimizing Inventory Routing: A Decision-Focused Learning Approach using Neural Networks - MD Shafikul Islam, Azmine Toushik Wasi</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SP8GJQMDNP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-SP8GJQMDNP');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="../0static/css/bulma.min.css">
+  <link rel="stylesheet" href="../0static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../0static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../0static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../0static/css/index.css">
+  <link rel="icon" href="../0static/images/favicon2.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="../0static/js/fontawesome.all.min.js"></script>
+  <script src="../0static/js/bulma-carousel.min.js"></script>
+  <script src="../0static/js/bulma-slider.min.js"></script>
+  <script src="../0static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Optimizing Inventory Routing: A Decision-Focused Learning Approach using Neural Networks</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://openreview.net/profile?id=~MD_Shafikul_Islam1" target="_blank">MD Shafikul Islam</a>,</span>
+            <span class="author-block">
+              <a href="https://azminewasi.github.io/" target="_blank">Azmine Toushik Wasi</a></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Shahjalal University of Science and Technology</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://openreview.net/forum?id=r0fzjB8f7f" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Openreview</span>
+                </a>
+              </span>
+
+
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2311.00983" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2311.00983.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>PDF</span>
+                </a>
+              </span>
+                          <!-- 
+
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=I4HxYUhVd18&t=31s" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://github.com/takihasan/ARBEx" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://paperswithcode.com/paper/arbex-attentive-feature-extraction-with" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-file-pdf"></i>
+                  </span>
+                  <span>Papers with Code</span>
+                  </a>
+           
+            </div>
+
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://www.semanticscholar.org/paper/ARBEx%3A-Attentive-Feature-Extraction-with-Balancing-Wasi-vSerbetar/b468a27c1ea7692d4de00ff5a948f3bfeaa63a60" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span>Citation Count: 
+                  <span id="citationCountarbex"> (Loading...) </span></span>
+                  </a>
+                </span>
+              </div>
+              </div>
+            -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <b>TL;DR: </b>This paper introduces a decision-focused learning approach that seamlessly integrates inventory prediction and routing optimization to address the Inventory Routing Problem, incorporating optimization feedback into neural network training.</h3>
+      </br></br>
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Inventory Routing Problem (IRP) is a crucial challenge in supply chain management as it involves optimizing efficient route selection while considering the uncertainty of inventory demand planning. IRP addresses the challenge of accurately predicting inventory levels. To solve IRP, usually a two-stage approach is employed, where demand is predicted using machine learning techniques firstly, and then an optimization algorithm is used to minimize routing costs. However, machine learning models often fall short of achieving perfect accuracy because inventory levels are influenced by the dynamic business environment, which, in turn, affects the optimization problem in the next stage, resulting in sub-optimal decisions. In this paper, we formulate and propose decision-focused learning based approach to solve real-world IRPs. This approach directly integrates inventory prediction and routing optimization within an end-to-end system. Mathematical formulations exhibit promise in effectively addressing uncertainties and accurately predicting inventory levels, potentially influencing global supply chain systems significantly.</p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Architecture</h2>
+        <div class="content has-text-justified">
+          <img src="./static/images/1_formulation-page-001.jpg">
+          <p>
+          Formulation.</p> 
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          The inventory routing problem integrates inventory management and vehicle routing decisions,
+improving supply chain solutions by jointly addressing inventory levels and customer delivery routing. 
+Various approaches, including branch and cut, genetic algorithms, and heuristics/meta-heuristics,
+aim to find optimal or near-optimal solutions in most models. In the dynamic business environment,
+where demand fluctuations significantly affect overall profit, few models focus on integrating demand
+prediction with optimal decision-making. To address uncertainty, the problem is typically tackled
+using a two-stage method. In the first stage, demand prediction is performed, and in the second
+stage, the predicted value is used in an optimization algorithm to make decisions. But enhancing
+prediction accuracy doesn’t always guarantee optimal decision-making. Moreover, in the dynamic
+business landscape, improving accuracy can be challenging, often resulting in sub-optimal decisions.
+Decision-focused learning (DFL) takes a unique approach by not segregating predictive modeling
+and optimization. Instead, it integrates them by connecting the machine learning model directly to
+decision quality. In DFL, the loss function relies on the solution of an optimization model, effectively
+embedding the optimization solver as part of the machine learning model, leading to more effective
+decision-making.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <img src="./static/images/2_model-page-001.jpg">
+          <p>
+          Model.</p> 
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Discussion</h2>
+        <div class="content has-text-justified">
+        <p >
+          
+          In our paper, we introduce a novel idea to tackle the intricate Inventory Routing Problems (IRP)
+          using decision-focused learning.Our experiments highlight a critical insight: simply increasing model
+          accuracy doesn’t guarantee improved profitability or optimal decisions. This discovery has motivated
+          us to embrace a decision-focused perspective. However, challenges emerge when calculating gradients
+          for optimal solutions with respect to model parameters. To address this, we’ve introduced the
+          concept of regularizers and logarithmic barriers. Traditional regularization demonstrates promise in
+          smoothing the objective function, while the logarithmic barrier method proves useful for managing
+          constraints. It’s essential to recognize that IRPs are NP-hard and become particularly computationally
+          demanding at a large scale. Finding optimal decisions through objective function differentiation can
+          be counterproductive if the methodology isn’t chosen wisely for objective function transformation. In
+          the realm of IRP, the logarithmic barrier method stands out as a robust choice for efficiently handling
+          capacity constraints. However, to smoothen the objective and ensure differentiability for gradientbased optimization, regularization may be the more suitable path. Further research is imperative to
+          determine the most effective approach among these two or any hybridized method for integrating
+          decisions and predictions into a single model, ensuring the optimal selection of inventory and routing
+          for establishing a resilient supply chain strategy.
+
+        </p></div>
+        <div class="content has-text-justified">   
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      # Preferred
+      @inproceedings{
+        islam2023optimizing,
+        title={Optimizing Inventory Routing: A Decision-Focused Learning Approach using Neural Networks},
+        author={MD Shafikul Islam and Azmine Toushik Wasi},
+        booktitle={New in Machine Learning Workshop, NeurIPS 2023},
+        year={2023},
+        url={https://openreview.net/forum?id=r0fzjB8f7f}
+      }
+  </code>
+  </hr>
+    <code>
+      @article{
+        islam2023optimizing,
+        title={Optimizing Inventory Routing: A Decision-Focused Learning Approach using Neural Networks}, 
+        author={MD Shafikul Islam and Azmine Toushik Wasi},
+        year={2023},
+        eprint={2311.00983},
+        archivePrefix={arXiv},
+        primaryClass={cs.LG}
+      }
+    </code>
+
+</pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p style="font-size: small; text-align: center;">
+            This website is licensed under a <a rel="license" target="_blank"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.</br>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            the devs just ask that you link back to <a href="https://nerfies.github.io/" target="_blank">this page</a> in the footer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
