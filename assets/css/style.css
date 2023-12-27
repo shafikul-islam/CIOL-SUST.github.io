@@ -611,6 +611,40 @@ body {
     a:hover, a:focus {
       text-decoration: none;
   }
+  
+
+  @media screen and (max-width: 42em) {
+    .dropdown {
+      display: block;
+    }
+    #call-for-papers{
+      text-align: center;
+    }
+  }
+  
+  @media screen and (min-width: 42em) {
+    .dropdown {
+      display: none;
+    }
+  }
+
+  .short-btn {
+    display: block;
+    background-color: rgba(56, 2, 2, 0.9);
+    color: white; /* Adjust text color as needed */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.2s;
+    margin: 0.2em;
+  }
+  
+  .short-btn:hover {
+    background-color: rgb(27, 2, 2); /* Darker color on hover */
+    color: white; /* Adjust text color as needed */
+    padding: 1rem 1.5rem; /* Adjust padding as needed */
+
+  }
 
 .btn {
   display: inline-block;
@@ -642,9 +676,13 @@ body {
       width: 100%;
       padding: 0.75rem;
       font-size: 0.9rem; }
-      .btn + .btn {
+    .btn + .btn {
         margin-top: 1rem;
-        margin-left: 0; } }
+        margin-left: 0; } 
+    .bf{
+          display: none;
+        }
+      }
 
 .btn-disabled {
   display: inline-block;
@@ -926,10 +964,10 @@ body {
   background-position: center; }
   @media screen and (min-width: 64em) {
     .page-header {
-      padding: 7.5rem 6rem; } }
+      padding: 3rem 2rem; } }
   @media screen and (min-width: 42em) and (max-width: 64em) {
     .page-header {
-      padding: 2.5rem 4rem; } }
+      padding: 2.5rem 2rem; } }
   @media screen and (max-width: 42em) {
     .page-header {
       padding: 2rem 1rem; } }

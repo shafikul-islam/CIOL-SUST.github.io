@@ -33,12 +33,30 @@
       <img src="./assets/images/ciol.png" style="border-radius: 10%;" alt="CIOL logo" width="100" height="100">
       <h1 class="project-name">Computational Intelligence and Operations Lab - CIOL </h1>
 
-    <a href="./index.html" class="btn">Home</a>
-        <a href="./updates.html" class="btn">Updates</a>
-        <a href="./publications.html" class="btn">Publications</a>
-        <a href="./research.html" class="btn">Research</a>
-        <a href="./team.html" class="btn">Team</a>
-        <a href="./advisors.html" class="btn">Advisors</a>
+    <a href="./index.html" class="btn bf">Home</a>
+        <a href="./updates.html" class="btn bf">Updates</a>
+        <a href="./publications.html" class="btn bf">Publications</a>
+        <a href="./research.html" class="btn bf">Research</a>
+        <a href="./team.html" class="btn bf">Team</a>
+        <a href="./advisors.html" class="btn bf">Advisors</a>
+
+        <div class="dropdown"> 
+          <button class="btn" onclick="toggleDropdown()">Menu &#9662;</button>
+          <div id="dropdownContent"  style="width: 92%;  display: none; position: absolute; background-color: rgba(231, 188, 188, 0);  z-index: 1;">
+            <a href="./index.html" class="short-btn"  class="short-btn"  >Home</a>
+            <a href="./updates.html"  class="short-btn"  >Updates</a>
+            <a href="./publications.html"  class="short-btn"  >Publications</a>
+            <a href="./research.html"  class="short-btn"  >Research</a>
+            <a href="./team.html"  class="short-btn"  >Team</a>
+            <a href="./advisors.html" class="short-btn"  >Advisors</a>
+          </div>
+        </div>
+        <script>
+          function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.style.display = (dropdownContent.style.display === "none" || dropdownContent.style.display === "") ? "block" : "none";
+          }
+        </script>
 
 
     </header>
@@ -48,9 +66,9 @@
       <hr style="height:6px;border-width:0;color:gray;background-color:gray">
 
         <div>
-          <ul style="list-style: none">
+          <ul style="list-style: none; margin: 0; padding: 0;">
 
-            <li> <span style="font-weight: 800; font-size: 18pt;">SupplyGraph: A Benchmark Dataset for Supply Chain Planning using Graph Neural Networks</span>
+            <li style="list-style: none; margin: 0; padding: 0;"> <span style="font-weight: 800; font-size: 18pt;">SupplyGraph: A Benchmark Dataset for Supply Chain Planning using Graph Neural Networks</span>
               <br>
                 <a target="_blank" href="https://azminewasi.github.io/">Azmine Toushik Wasi</span></a>,
                 <a target="_blank" href="https://www.linkedin.com/in/md-shafikul-islam-sohan/">MD Shafikul Islam Sohan</a>,
