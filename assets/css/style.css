@@ -621,16 +621,21 @@ body {
       text-align: center;
     }
   }
-  
+
   @media screen and (min-width: 42em) {
     .dropdown {
       display: none;
     }
   }
 
+
+
+
+
+
   .short-btn {
     display: block;
-    background-color: rgba(56, 2, 2, 0.9);
+    background-color: rgba(56, 2, 2, 1);
     color: white; /* Adjust text color as needed */
     padding: 0.5rem 1rem; /* Adjust padding as needed */
     border: none;
@@ -979,15 +984,29 @@ abstract {
   font-size: 0.90rem; }
 
 .row {
-  display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
+
+
+@media screen and (min-width: 42em) {
+  .row {
+    display: flex; } }
+@media screen and (max-width: 42em) {
+  .row {
+    display: block; } }
+
+
 
 .person {
   flex-basis: 30%;
   text-align: center;
 }
+
+@media screen and (max-width: 42em) {
+  .person {
+    margin-bottom: 2em;} }
 
 .person img {
   width: 100%;
@@ -1018,3 +1037,13 @@ abstract {
 .person-page p {
   margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
